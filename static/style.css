@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ja-jp;
+    src: url(../static/content/font/ja-jp.ttf);
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}

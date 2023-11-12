@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Genshin Impact HUD</title>
     <link rel="stylesheet" href="../static/style.css"></link>
+    <link rel="shortcut icon" href="../static/content/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <canvas id="miCanvas" width="1280" height="720" style="border:1px solid #000;"></canvas>
     <div>
-        <div class="skip-text">hola</div>
-        <img src="../static/content/images/base.png" alt="">
+        <input type="text" name="name" id="nameInput"> Name
+        <input type="text" name="job" id="jobInput"> Especialidad
+        <input type="text" name="dialog" id="dialogInput"> Dialogo
+        <a id="canvasDownload" href="#" download>Download</a>
     </div>
-
     <script src="../static/script.js"></script>
 </body>
 </html>
