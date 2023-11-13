@@ -17,7 +17,3 @@ Current Version: 0.1.0
 ## Feedback and Contributions
 
 We welcome any feedback or contributions to make the Genshin Hud Generator better. Feel free to open issues, submit pull requests, or reach out to us with your suggestions.
-
-## License
-
-This project is licensed under the [MIT License](link-to-your-license-file).
