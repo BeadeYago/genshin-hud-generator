@@ -4,6 +4,7 @@
 }
 
 canvas {
+    background-image: url(../static/content/images/backgroundReference.png);
     display: block;
     max-width: 100%;
     max-height: 100%;

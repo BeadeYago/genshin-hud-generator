@@ -6,15 +6,38 @@
     <title>Genshin Impact HUD</title>
     <link rel="stylesheet" href="../static/style.css"></link>
     <link rel="shortcut icon" href="../static/content/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <canvas id="miCanvas" width="1280" height="720" style="border:1px solid #000;"></canvas>
-    <div>
-        <input type="text" name="name" id="nameInput"> Name
-        <input type="text" name="job" id="jobInput"> Especialidad
-        <input type="text" name="dialog" id="dialogInput"> Dialogo
-        <a id="canvasDownload" href="#" download>Download</a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <canvas id="miCanvas" width="1280" height="720" style="border:1px solid #0000;"></canvas>
+            </div>
+            <div class="col-md-3">
+                <h5>Name</h5>
+                <input type="text" name="name" id="nameInput">
+                <h5>Specialty</h5>
+                <input type="text" name="job" id="jobInput">
+                <h5>Dialog</h5>
+                <textarea name="dialog" id="dialogInput" cols="56" rows="3"></textarea>
+                <h5>Automatic</h5>
+                <input type="text" name="automatic" id="automaticInput">
+                <h5>Text Lenght (Soon)</h5>
+                <select name="textLenght" id="TextLenghtInput">
+                    <option value="short">Short</option>
+                    <option value="medium">Medium</option>
+                    <option value="long">Long</option>
+                </select>
+                <h5>Character has Specialty?</h5>
+                <input type="checkbox" name="displayJob" id="hasJob" checked="true"> 
+                <h5>Download</h5>
+                <a id="canvasDownload" href="#" download>Download</a>
+            </div>
+        </div>
     </div>
+
     <script src="../static/script.js"></script>
 </body>
 </html>
